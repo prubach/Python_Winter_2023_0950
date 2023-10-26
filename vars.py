@@ -35,3 +35,32 @@ print(f'j={j}')
 print(type(j))
 js = str(j)
 print(type(js))
+
+print('-------------')
+
+bb = 0b101
+print(bb)
+hh = 0x10
+print(hh)
+print(0x6a)
+
+ff = 25325235.66634634
+fa = int(ff)
+print(fa)
+far = round(ff, 2)
+print(far)
+
+#s = '52362662362.62562356'
+s = '235234535626'
+
+print('is s a digit %s' % s.isdigit())
+print('is s a numeric %s' % s.isnumeric())
+print('is s a alfanum %s' % s.isalnum())
+print('is s a alfa %s' % s.isalpha())
+
+a = 10
+b = 4
+r = a % b
+print(type(r))
+print(r)
+

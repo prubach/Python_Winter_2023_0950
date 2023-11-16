@@ -26,9 +26,17 @@ list_of_points = [(1, 2), (3, 2), (-1, 3)]
 for x, y in list_of_points:
     print(f'x={x}, y={y}')
 
-
+print('------ matrix --------')
 list_of_points_3D = [[1, 2, 6], [3, 2, 3], [4, 3, 7]]
+#print(list_of_points_3D)
 
+for row in list_of_points_3D:
+    print(row)
+
+# TODO:
+# 1. Print the sum of each row
+# 2. Print the sum of each column
+# 3. Print the sum of all elements
 
 
 

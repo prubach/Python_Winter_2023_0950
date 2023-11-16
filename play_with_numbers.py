@@ -27,5 +27,10 @@ for x, y in list_of_points:
     print(f'x={x}, y={y}')
 
 
+list_of_points_3D = [[1, 2, 6], [3, 2, 3], [4, 3, 7]]
+
+
+
+
 
 

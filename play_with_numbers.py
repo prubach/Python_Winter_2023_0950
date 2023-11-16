@@ -1,4 +1,4 @@
-num_list = [2, 13, 9, 7, 11, 5, 18]
+num_list = [2, 13, 9, 7, 11, 5, 18, 7, 9]
 
 '''
 TODO 
@@ -14,6 +14,17 @@ print(num_list_2nd_pow_sorted)
 print('------ set --------')
 set_of_nums = set(num_list_2nd_pow_sorted)
 print(set_of_nums)
+print('------ tuples --------')
+t = (10, 57, 37)
+x, y, z = t
+print(x, y, z)
+print(t)
+for i in t:
+    print(i)
+print('------ tuples 2D --------')
+list_of_points = [(1, 2), (3, 2), (-1, 3)]
+for x, y in list_of_points:
+    print(f'x={x}, y={y}')
 
 
 

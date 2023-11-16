@@ -35,10 +35,31 @@ for row in list_of_points_3D:
 
 # TODO:
 # 1. Print the sum of each row
+row_sums = []
+for row in list_of_points_3D:
+    row_sum = sum(row)
+    row_sums.append(row_sum)
+    print(f"{'The sum of the row'} {row}:{row_sum}")
+print(row_sums)
 # 2. Print the sum of each column
+col_sums = [0, 0, 0]
+for row in list_of_points_3D:
+    for i in range(len(row)):
+         col_sums[i] += row[i]
+print(col_sums)
+
+
 # 3. Print the sum of all elements
+print(sum(row_sums))
 
+print('----------------------')
+lang = ['Python', 'Java', 'C++']
+vers = [3.11, 17, 14]
 
+lang_vers = list(zip(lang, vers))
+print(lang_vers)
 
-
+print('----Sum of cols using zip ------------------')
+col_sums = [sum(els) for els in zip(*list_of_points_3D)]
+print(col_sums)
 

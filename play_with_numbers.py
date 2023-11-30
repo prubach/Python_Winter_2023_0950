@@ -30,6 +30,36 @@ print('------ matrix --------')
 list_of_points_3D = [[1, 2, 6], [3, 2, 3], [4, 3, 7]]
 #print(list_of_points_3D)
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+all_points = np.array(list_of_points_3D)
+x = [i[0] for i in list_of_points]
+y = [i[1] for i in list_of_points]
+#z = [i[2] for i in all_points]
+#xpoints = np.array([1, 8])
+#ypoints = np.array([3, 10])
+
+plt.plot(x, y, 'o')
+plt.show()
+
+
+xs = [i[0] for i in list_of_points_3D]
+ys = [i[1] for i in list_of_points_3D]
+zs = [i[2] for i in list_of_points_3D]
+
+
+fig = plt.figure()
+ax = fig.add_subplot(projection='3d')
+ax.scatter(xs, ys, zs, marker='^')
+
+ax.set_xlabel('X Label')
+ax.set_ylabel('Y Label')
+ax.set_zlabel('Z Label')
+
+plt.show()
+
 for row in list_of_points_3D:
     print(row)
 
@@ -47,6 +77,25 @@ for row in list_of_points_3D:
     for i in range(len(row)):
          col_sums[i] += row[i]
 print(col_sums)
+
+col_sum = [0, 0, 0]
+for row in list_of_points_3D:
+    print(row)
+    for i in range(len(row)):
+        col_sum[i] += row[i]
+
+print(col_sum)
+
+
+languages = ['Java', 'Python', 'JavaScript']
+versions = [14, 3, 6]
+result = zip(languages, versions)
+
+print(list(result))
+
+res = [sum(idx) for idx in zip(*list_of_points_3D)]
+print(res)
+
 
 
 # 3. Print the sum of all elements

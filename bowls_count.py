@@ -45,11 +45,13 @@ def bowls_recursive(n):
 #     for i in range(n):
 #         1 + i
 #     return
-n = 5
-print('Sum using sequence: {}'.format(bowls_sequence(n)))
-print('Sum using loop 1: {}'.format(bowls_loop_1(n)))
-print('Sum using loop 2: {}'.format(bowls_loop_2(n)))
-print('Sum using recursion: {}'.format(bowls_recursive(n)))
-#print(bowls_sequence(n))
+
+if __name__ == '__main__':
+    n = 500
+    print('Sum using sequence: {}'.format(bowls_sequence(n)))
+    print('Sum using loop 1: {}'.format(bowls_loop_1(n)))
+    print('Sum using loop 2: {}'.format(bowls_loop_2(n)))
+    print('Sum using recursion: {}'.format(bowls_recursive(n)))
+    #print(bowls_sequence(n))
 
 
